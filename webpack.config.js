@@ -1,3 +1,5 @@
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+
 module.exports = {
   mode: 'development',
   watch: true,
@@ -12,4 +14,10 @@ module.exports = {
     ],
   },
   devtool: 'source-map',
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: 'src/index.html',
+      minify: true
+    })
+  ]
 };
