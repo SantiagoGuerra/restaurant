@@ -7,10 +7,10 @@ import { appendContent, innerContent } from './utils/injectContent';
 import HomePage from './pages/home.html';
 import MenuPage from './pages/menu.html';
 import ContactPage from './pages/contact.html';
-import './styles/main.scss'
+import './styles/main.scss';
 
 
-window.addEventListener('load', e => {
+window.addEventListener('load', () => {
   appendContent(MainContent, Header);
   appendContent(MainContent, PageContent);
 

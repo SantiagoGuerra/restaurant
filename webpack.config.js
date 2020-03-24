@@ -16,9 +16,9 @@ module.exports = {
         use: {
           loader: 'url-loader',
           options: {
-            sourceMap: true
-          }
-        }
+            sourceMap: true,
+          },
+        },
       },
       {
         test: /\.html$/i,
@@ -32,10 +32,10 @@ module.exports = {
           'resolve-url-loader',
           {
             loader: 'sass-loader',
-            options: { sassOptions: {outputStyle: 'compressed'}}
-          }
-        ]
-      }
+            options: { sassOptions: { outputStyle: 'compressed' } },
+          },
+        ],
+      },
     ],
   },
   devtool: 'source-map',
