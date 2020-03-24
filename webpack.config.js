@@ -11,13 +11,17 @@ module.exports = {
           loader: 'babel-loader',
         },
       },
+      {
+        test: /\.html$/i,
+        use: { loader: 'html-loader' },
+      },
     ],
   },
   devtool: 'source-map',
   plugins: [
     new HtmlWebpackPlugin({
       template: 'src/index.html',
-      minify: true
-    })
-  ]
+      minify: true,
+    }),
+  ],
 };
