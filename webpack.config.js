@@ -15,6 +15,17 @@ module.exports = {
         test: /\.html$/i,
         use: { loader: 'html-loader' },
       },
+      {
+        test: /\.s?css$/i,
+        use: [
+          'style-loader',
+          'css-loader',
+          {
+            loader: 'sass-loader',
+            options: { sassOptions: {outputStyle: 'compressed'}}
+          }
+        ]
+      }
     ],
   },
   devtool: 'source-map',
