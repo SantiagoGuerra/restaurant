@@ -1,0 +1,31 @@
+@import 'abstracts/variables';
+@import 'base/reset';
+@import 'components/header';
+@import 'components/page-container';
+@import 'components/home';
+@import 'components/contact';
+
+
+
+
+body {
+  background: {
+    image: url('../assets/styles/bg-page.jpg');
+    attachment: fixed;
+    size: cover;
+    repeat: no-repeat;
+  };
+
+  &::after {
+    background: {
+      color: $alt-third-color;
+    };
+    content: ' ';
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -100;
+  } 
+}
