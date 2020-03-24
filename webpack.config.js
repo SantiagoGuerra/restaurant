@@ -12,6 +12,15 @@ module.exports = {
         },
       },
       {
+        test: /\.(png|jpg|gif)$/i,
+        use: {
+          loader: 'url-loader',
+          options: {
+            sourceMap: true
+          }
+        }
+      },
+      {
         test: /\.html$/i,
         use: { loader: 'html-loader' },
       },
@@ -20,6 +29,7 @@ module.exports = {
         use: [
           'style-loader',
           'css-loader',
+          'resolve-url-loader',
           {
             loader: 'sass-loader',
             options: { sassOptions: {outputStyle: 'compressed'}}
