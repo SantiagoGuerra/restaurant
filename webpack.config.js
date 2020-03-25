@@ -7,9 +7,10 @@ module.exports = {
     rules: [
       {
         test: /\.js$/i,
-        use: {
-          loader: 'babel-loader',
-        },
+        use: [
+          { loader: 'babel-loader' },
+          { loader: 'eslint-loader' },
+        ],
       },
       {
         test: /\.(png|jpg|gif)$/i,
