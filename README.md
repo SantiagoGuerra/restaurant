@@ -87,7 +87,7 @@ This project was built using these technologies.
 ## Contact
 
 <br />
-Santiago Guerra - [@dedalo_g](https://twitter.com/dedalo_g) - [@SantiagoGuerra](https://github.com/SantiagoGuerra) - euqueme@gmail.com
+Santiago Guerra - [@dedalo_g](https://twitter.com/dedalo_g) - [@SantiagoGuerra](https://github.com/SantiagoGuerra) - guerrasantiago19@gmail.com
 
 Project Link: [https://github.com/SantiagoGuerra/restaurant)
 
